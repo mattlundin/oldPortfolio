@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Matt's Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="nav-container">
+      <nav class="navbar">
+        <div class="logo"><a href="#home">ML</a></div>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li> 
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- HOME -->
+    <div id="home">
+      <div class="container">
+        <!-- Home -->
+        <div class="header">
+          <p class="name">Matt Lundin</p>
+          <p class="developer">Front-End Web Developer</p>
+          <div class="code-icon">
+            <i class="fas fa-code" onclick="sound.play()"></i>
+          </div>
+          <div class="toasty-cont">
+            <div class="toasty">
+                <img src="images/Toasty.avif">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container">
+        <div class="about-section">
+          <p class="hello" data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1500">Hello World!</p>
+          <div class="paragraph">
+            <p class="para">My name is Matt and I am a developer currently living in Arkansas. I have a passion for learning new technologies. From a monitor to a cell phone and everything in between I give websites a seamless transition no matter what screen size it's being viewed on. Contact me to let me know how I can help out with your future project.</p>
+            <div class="responsive-icons">
+              <div class="cell" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300"><i class="fas fa-mobile-alt"></i></div>
+              <div class="tablet" data-aos="flip-up" data-aos-duration="1500"><i class="fas fa-tablet-alt"></i></div>
+              <div class="monitor" data-aos="fade-right" data-aos-duration="1500" data-aos-offset="300"><i class="fas fa-desktop"></i></div>
+            </div>
+          </div>
+          <!--! ===== ADD ASTROPHOTOGRAPHY SLIDER HERE ===== -->
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects">
+      <div class="container">        
+        <div class="projects-header">
+          <p>
+            <div data-aos="zoom-in-right" data-aos-duration="3000">P</div>
+            <div data-aos="zoom-in-left" data-aos-duration="3000">R</div>
+            <div data-aos="zoom-in-right" data-aos-duration="3000">O</div>
+            <div data-aos="zoom-in-left" data-aos-duration="3000">J</div>
+            <div data-aos="zoom-in-right" data-aos-duration="3000">E</div>
+            <div data-aos="zoom-in-left" data-aos-duration="3000">C</div>
+            <div data-aos="zoom-in-right" data-aos-duration="3000">T</div>
+            <div data-aos="zoom-in-left" data-aos-duration="3000">S</div>
+          </p>
+        </div>
+        <div class="projects-section">
+          <div class="projects-container">
+            <div class="project-img" data-aos="zoom-in-up" data-aos-duration="1800">
+              <a href="https://mattlundin.github.io/City-Lights-Bootstrap/" alt="bootstrap"target="_blank">
+                <img src="images/City-Lights-Bootstrap.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-img" data-aos="zoom-in-up" data-aos-duration="1800">
+              <a href="https://mattlundin.github.io/Simple-Grocery-List/" alt="bootstrap"target="_blank">
+                <img src="images/Grocery-List.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-img" data-aos="zoom-in-up" data-aos-duration="1800">
+              <a href="https://mattlundin.github.io/AstrophotographyCarousel/" alt="image-slider" target="_blank">
+                <img src="images/AstrophotographyCarousel1.jpg">
+              </a>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-img" data-aos="zoom-in-up" data-aos-duration="1800">
+              <a href="https://mattlundin.github.io/To-Do-List/" alt="to-do list" target="_blank">
+                <img src="images/To-Do-List.jpg">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="container">
+        <div class="form-container">
+          <h1>Contact</h1>
+          <form action="https://formsubmit.co/matt.lundin@outlook.com" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="name" required>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="message" required></textarea>
+
+            <button type="submit" value="submit">Submit</button>
+          </form>
+          <div class="github">
+            <a href="https://github.com/mattlundin" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
