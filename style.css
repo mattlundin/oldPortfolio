@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Rampart+One&family=Train+One&display=swap');
 
 :root {
 	--accent: rgb(0, 132, 255);
@@ -101,9 +101,6 @@ body::-webkit-scrollbar-thumb {
 
 .nav-list a:hover {
 	color: var(--accent);
-}
-
-.nav-list a:hover {
 	text-decoration: underline;
 	text-decoration-color: var(--accent);
 }
@@ -151,8 +148,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .name {
-	font-family: 'Goblin One', cursive;
-	font-size: 9rem;
+	font-family: 'Rampart One', cursive;
+	font-size: 10rem;
+	letter-spacing: 5px;
 	animation: name 1s linear;
 	text-shadow: 2px 2px 5px var(--accent);
 }
@@ -365,28 +363,6 @@ body::-webkit-scrollbar-thumb {
 	transition: 1s ease-in-out;
 }
 
-/* .link {
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	margin-bottom: 8px;
-	padding: 3px;
-	font-size: 1rem;
-	font-weight: 600;
-	background-color: rgba(0, 0, 0, 0.637);
-	border: none;
-	outline: none;
-	transform: translate(-50%);
-}
-
-.link a {
-	color: #fff;
-}
-
-.link a:hover {
-	color: var(--accent);
-} */
-
 /* CONTACT */
 #contact {
 	height: 50vh;
@@ -430,8 +406,15 @@ button {
 	width: 60px;
 	margin-top: 10px;
 	font-weight: 600;
-	box-shadow: 1px 1px 3px var(--accent);
 	cursor: pointer;
+	transition: 0.4s ease-in-out;
+}
+
+button:hover {
+	background-color: var(--accent);
+	color: #fff;
+	box-shadow: 0px 1px 2px var(--accent);
+	transition: 0.4s ease-in-out;
 }
 
 /* BURGER */
@@ -533,7 +516,7 @@ button {
 }
 @media screen and (max-width: 600px) {
 	#home {
-		height: calc(100vh - 8rem);
+		height: calc(100vh - 72px);
 	}
 	.container {
 		margin: 0.5rem;
