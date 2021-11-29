@@ -365,7 +365,6 @@ body::-webkit-scrollbar-thumb {
 
 /* CONTACT */
 #contact {
-	height: 50vh;
 	padding: 50px 0;
 }
 
@@ -375,6 +374,7 @@ body::-webkit-scrollbar-thumb {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	padding: 50px 0;
 	background-color: rgba(0, 0, 0, 0.603);
 }
 
